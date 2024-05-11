@@ -1,0 +1,10 @@
+    for (x, y, w, h) in faces:
+        roi_gray = gray[y:y+h, x:x+w]
+        resized = cv2.resize(roi_gray, (64, 64), interpolation=cv2.INTER_AREA)
+        flattened = resized.flatten()
+        prediction = clf.predict_proba([flattened])
+        if prediction[0][1] > 0.5:  # 
+            cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+    cv2.imshow('Image with Faces', img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
