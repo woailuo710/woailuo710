@@ -1,0 +1,10 @@
+			else
+			{
+				cout << "  ";
+			}
+		}
+		cout << endl;
+	}
+
+	SetPos(31, 2);
+	cout << "" << endl;
