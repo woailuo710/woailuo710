@@ -1,0 +1,6 @@
+					TCHAR s_boss1hp[100];
+					_stprintf(s_boss1hp, _T("【Boss】HP：%d"), boss1hp);
+					 ((WINDOW_WIDTH / 2 + WIDTH / 2) + 45, 200, s_boss1hp);
+ 
+					if (boss1hp <= 0)
+					{
