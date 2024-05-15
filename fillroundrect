@@ -1,0 +1,13 @@
+						boss1show = 0;
+						kill += 50;
+					}
+				}
+				else
+				{
+					fillroundrect(P->x, P->y, P->x + 10, P->y + 35, 10, 30);
+					P->y -= 5;
+					P = P->pnext;
+				}
+			}
+		}
+ 
