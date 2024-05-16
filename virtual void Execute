@@ -1,0 +1,17 @@
+class Command
+{
+public:
+     virtual void Execute() = 0;
+};
+ 
+class ConcreteCommand : public Command
+{
+public:
+     ConcreteCommand(Receiver *pReceiver) : m_pReceiver(pReceiver){}
+     void Execute()
+     {
+          m_pReceiver->Action();
+     }
+private:
+     Receiver *m_pReceiver;
+};
