@@ -1,0 +1,5 @@
+rivate JPanel panelUserName;
+ 
+    private JPanel panelPassWd;
+ 
+    private JPanel panelLoginButton;
