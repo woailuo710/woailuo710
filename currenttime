@@ -1,0 +1,7 @@
+        if (currenttime - starttime - subtime > 0)
+        {
+            srand((unsigned)time(NULL));
+            unsigned int target_y = rand() % 14 + 3;
+            target = generate_target(target, target_y);
+        }
+        subtime = currenttime - starttime;
