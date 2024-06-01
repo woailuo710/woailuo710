@@ -1,0 +1,8 @@
+    int targetspeed = 0;
+    int bulletspeed = 0;
+ 
+    while(1)
+    {
+        system("cls");
+        time_t currenttime;
+        currenttime = time(NULL);
