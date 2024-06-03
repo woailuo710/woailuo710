@@ -1,0 +1,19 @@
+[] // empty
+ 
+PSH 5 // put 5 on **top** of the stack
+[5]
+ 
+PSH 6
+[5, 6]
+ 
+POP
+[5]
+ 
+POP
+[] // empty
+ 
+PSH 6
+[6]
+ 
+PSH 5
+[6, 5]
